@@ -1,0 +1,36 @@
+@import 'global';
+@import 'principal';
+
+header{
+    position: fixed;
+    top:0;
+    width:100%;
+}
+
+.wrapper{
+    background-color: #fff;
+    padding-top: 100px;
+    padding-bottom:100px;
+}
+
+nav{
+    @include caja-flex(space-around, center, nowrap);
+
+    ul{
+        display:flex;
+        padding:0;
+
+        a{
+            padding: 10px;
+            font-size: 1.6rem;
+            font-weight:bold;
+        }
+
+        a:hover{
+            color:#174a9c;
+            transform: scale(1.1);
+        }
+    }
+}
+
+
